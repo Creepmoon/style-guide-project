@@ -1,5 +1,8 @@
 {
   "scripts": {
-  "lint:md": "markdownlint-cli2"
-}
+    "lint:md": "markdownlint-cli2"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.23.3"
+  }
 }
