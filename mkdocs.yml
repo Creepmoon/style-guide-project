@@ -1,0 +1,29 @@
+site_name: Стайлгайд проекта
+site_description: Руководство по стилю технической документации
+site_url: ""
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Главная: index.md
+  - Стиль изложения: style.md
+  - Терминология и сокращения: terminology.md
+  - Орфография и пунктуация: grammar.md
+  - Структура документов: structure.md
+  - Форматирование Markdown: markdown.md
+  - Техническое содержание: technical-content.md
+  - Шаблоны документов: templates.md
+  - Проверка и сопровождение: maintenance.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true

@@ -1,0 +1,20 @@
+services:
+    docs:
+      build:
+        context: .
+      container_name: style-guide-docs
+      ports:
+        - "8000:8000"
+      volumes:
+        - .:/docs
+      command: serve --dev-addr=0.0.0.0:8000
+
+    lint:
+      image: node:22-alpine
+      working_dir: /workspace
+      volumes:
+        - .:/workspace
+      command: sh -c "npm ci && npx markdownlint-cli2"
+
+volumes:
+    node_modules:
