@@ -21,6 +21,7 @@ nav:
   - Техническое содержание: technical-content.md
   - Шаблоны документов: templates.md
   - Проверка и сопровождение: maintenance.md
+  - Доступность текста: accessibility.md
 
 markdown_extensions:
   - admonition
